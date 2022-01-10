@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: ubuntu
+   resource_class: large
+   steps:
+      - run:
+          command: |
+
+  version: 2.1
+  cooking:
+    jobs:
+      - compile
